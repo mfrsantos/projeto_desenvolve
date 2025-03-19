@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .month {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .month h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .days div {
+            padding: 5px;
+            background-color: #f0f0f0;
+        }
+        .days div:nth-child(7n+1) {
+            color: red; /* Destacar domingos */
+        }
+    </style>
+</head>
+<body>
+    <h1>Calendário 2025</h1>
+    <div class="container">
+        <!-- Repetir a estrutura abaixo para cada mês -->
+        <div class="month">
+            <h2>Janeiro</h2>
+            <div class="days">
+                <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+                <!-- Adicionar os dias do mês aqui -->
+                <div></div> <!-- Espaço vazio para alinhar o primeiro dia do mês -->
+                <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div>
+                <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div>
+                <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div>
+                <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+                <div>29</div><div>30</div><div>31</div>
+            </div>
+        </div>
+        <!-- Copiar e colar a estrutura acima para cada um dos 12 meses, atualizando o nome do mês e os dias -->
+    </div>
+</body>
+</html>
